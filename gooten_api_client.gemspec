@@ -8,14 +8,14 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Gooten"]
   s.email       = ["hello@gooten.com"]
-  s.homepage    = "gooten.com"
+  s.homepage    = "https://www.gooten.com"
   s.summary     = "Gooten API Client Library"
   s.description = ""
   s.license     = ""
 
 
-  s.add_runtime_dependency 'typhoeus', '~> 0.2', '>= 0.2.1'
-  s.add_runtime_dependency 'json', '~> 1.4', '>= 1.4.6'
+  s.add_runtime_dependency 'typhoeus', '~> 1.0.2'
+  s.add_runtime_dependency 'json', '>= 1.4.6'
 
   s.add_development_dependency 'rspec', '~> 3.2', '>= 3.2.0'
   s.add_development_dependency 'vcr', '~> 2.9', '>= 2.9.3'
