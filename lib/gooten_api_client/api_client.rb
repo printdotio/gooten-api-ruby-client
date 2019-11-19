@@ -34,6 +34,7 @@ module GootenApiClient
         'Content-Type' => "application/json",
         'User-Agent' => @user_agent
       }
+      @default_query_params = {:recipeid => config.recipe_id}
     end
 
     def self.default
@@ -72,10 +73,10 @@ module GootenApiClient
       http_method = http_method.to_sym.downcase
 
       header_params = @default_headers.merge(opts[:header_params] || {})
-      query_params = opts[:query_params] || {}
+      query_params = @default_query_params.merge(opts[:query_params] || {})
       form_params = opts[:form_params] || {}
 
-      
+
 
       req_opts = {
         :method => http_method,

@@ -91,10 +91,13 @@ module GootenApiClient
 
     attr_accessor :force_ending_format
 
+    attr_accessor :recipe_id
+
     def initialize
       @scheme = 'https'
       @host = ''
       @base_path = '/api'
+      @recipe_id = nil
       @api_key = {}
       @api_key_prefix = {}
       @timeout = 0
